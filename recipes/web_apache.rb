@@ -28,6 +28,13 @@ end
 
 package 'libapache2-mod-php5' if platform_family?('debian')
 
+# enable PHP module
+apache_module 'php5' do
+  conf true
+  filename 'libphp5.so'
+  restart true
+end
+
 zabbix_source 'extract_zabbix_web' do
   branch node['zabbix']['server']['branch']
   version node['zabbix']['server']['version']
