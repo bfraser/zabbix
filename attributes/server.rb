@@ -15,6 +15,7 @@ default['zabbix']['server']['host'] = 'localhost'
 default['zabbix']['server']['port'] = 10_051
 default['zabbix']['server']['name'] = nil
 
+default['zabbix']['server']['java_gateway_enable'] = false
 default['zabbix']['server']['java_gateway'] = '127.0.0.1'
 default['zabbix']['server']['java_gateway_port'] = 10_052
 default['zabbix']['server']['java_pollers'] = 0
